@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "Scanner Dex",
+    "slug": "scanner-dex",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "scannerdex",
+    "backgroundColor": "#0F1218",
+    "assetBundlePatterns": ["**/*"],
+    "splash": {
+      "backgroundColor": "#0F1218",
+      "resizeMode": "contain"
+    },
+    "android": {
+      "package": "com.mardesitios.scannerdex",
+      "versionCode": 1,
+      "permissions": ["android.permission.CAMERA"],
+      "adaptiveIcon": { "backgroundColor": "#0F1218" }
+    },
+    "ios": {
+      "bundleIdentifier": "com.mardesitios.scannerdex",
+      "supportsTablet": false
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Scanner Dex usa la cámara únicamente para leer la carta que tienes enfrente. Las fotos no se guardan."
+        }
+      ]
+    ],
+    "extra": { "eas": { "projectId": "" } }
+  }
+}
